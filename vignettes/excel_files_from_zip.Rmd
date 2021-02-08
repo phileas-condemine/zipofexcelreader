@@ -17,3 +17,9 @@ knitr::opts_chunk$set(
 ```{r setup}
 library(zipofxlsxreader)
 ```
+
+
+```{r}
+read_excel_from_zip(system.file(package="zipofxlsxreader","datasets.zip"))
+```
+
