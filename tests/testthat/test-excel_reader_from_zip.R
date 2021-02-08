@@ -1,7 +1,7 @@
 library(zipofxlsxreader)
 library(testthat)
 library(tibble)
-test_that("returns a list",{
+test_that("check consistency and robustness of the excel file reader",{
 
   res = read_excel_from_zip(system.file(package="zipofxlsxreader","datasets.zip"))
   expect_type(res,"list")#map return a list
