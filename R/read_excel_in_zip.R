@@ -9,10 +9,12 @@
 #' @import purrr
 #' @importFrom magrittr %>%
 #' @importFrom utils unzip
+#' @importFrom assertthat assert_that
 #'
 #' @examples
 #' read_excel_from_zip(system.file(package="zipofxlsxreader","datasets.zip"))
 read_excel_from_zip = function(zip_file){
+  assertthat::assert_that(file.exists(zip_file))
   td = tempdir()
   unzip(zip_file,exdir = td,overwrite = TRUE)
   files = list.files(td,recursive = TRUE,full.names = TRUE,pattern = "(\\.xlsx$)|(\\.xls$)")

@@ -3,5 +3,6 @@
 export(read_excel_from_zip)
 import(purrr)
 import(readxl)
+importFrom(assertthat,assert_that)
 importFrom(magrittr,"%>%")
 importFrom(utils,unzip)

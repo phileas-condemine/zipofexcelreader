@@ -7,10 +7,10 @@
 read_excel_from_zip(zip_file)
 }
 \arguments{
-\item{zip_file}{data.frame}
+\item{zip_file}{path to a zip file that contains xls & xlsx files to be read}
 }
 \value{
-
+a list of data.frame
 }
 \description{
 Read The Excel Files In A Zip Archive
