@@ -1,0 +1,42 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE,
+  comment = "#>",
+  fig.path = "man/figures/README-",
+  out.width = "100%"
+)
+```
+
+# zipofxlsxreader
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+The goal of zipofxlsxreader is to read multiple Excel files from one zip archive
+
+## [Coming Soon] Installation
+
+You can install the released version of zipofxlsxreader from [CRAN](https://CRAN.R-project.org) with:
+
+``` r
+install.packages("zipofxlsxreader")
+```
+
+## Example
+
+
+```{r example}
+library(zipofxlsxreader)
+```
+
+
+```{r}
+read_excel_from_zip(system.file(package="zipofxlsxreader","datasets.zip"))
+```
+
